@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/suyash5/ws_moveit/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_planners/chomp/chomp_motion_planner/include/**",
+        "/home/suyash5/ws_moveit/src/geometric_shapes/include/**",
+        "/home/suyash5/ws_moveit/src/grasping_utils/grasp_utils/include/**",
+        "/home/suyash5/ws_moveit/src/grasping/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_planners/chomp/chomp_interface/include/**",
+        "/home/suyash5/ws_moveit/src/moveit_resources/prbt_ikfast_manipulator_plugin/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_ros/benchmarks/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_plugins/moveit_ros_control_interface/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_ros/move_group/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_ros/occupancy_map_monitor/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_ros/robot_interaction/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_ros/moveit_servo/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_setup_assistant/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_plugins/moveit_simple_controller_manager/include/**",
+        "/home/suyash5/ws_moveit/src/moveit_visual_tools/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner/include/**",
+        "/home/suyash5/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner_testutils/include/**",
+        "/home/suyash5/ws_moveit/src/rviz_visual_tools/include/**",
+        "/home/suyash5/ws_moveit/src/sagittarius_ws/src/sagittarius_arm_ros/sdk_sagittarius_arm/include/**",
+        "/home/suyash5/ws_moveit/src/srdfdom/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
