@@ -65,7 +65,8 @@ namespace grasp_utils
       posture.points[0].positions.resize(2);
       posture.points[0].positions[0] = -0.03;
       posture.points[0].positions[1] = -0.03;
-      posture.points[0].time_from_start = ros::Duration(0.5);    
+      posture.points[0].time_from_start = ros::Duration(0.5);  
+      ROS_INFO("gripper closed");
     }
     
     // Old version of pick which took move_group as arg
@@ -163,7 +164,6 @@ namespace grasp_utils
       // Setting posture of eef during grasp
       // +++++++++++++++++++++++++++++++++++
       closedGripper(grasp_.grasp_posture);
-      ROS_INFO("gripper closed");
 
       // Set support surface as table1. Not currently adding a table as a support surface.
       // group.setSupportSurfaceName("table1");
@@ -224,7 +224,7 @@ namespace grasp_utils
 
     void addCollisionObjects(moveit::planning_interface::PlanningSceneInterface& planning_scene_interface, moveit_msgs::Grasp grasp)
     {
-      // Create vector to hold 3 collision objects.
+      // Create vector to hold collision objects.
       std::vector<moveit_msgs::CollisionObject> collision_objects;
       collision_objects.resize(1);
 
@@ -323,8 +323,8 @@ namespace grasp_utils
         ROS_INFO("IK check passed - executing grasp no. %d",j);
         best_grasp = sorted_grasps[j];
         addCollisionObjects(planning_scene_interface,best_grasp); 
-        // pick(best_grasp);
-        closedGripper(best_grasp.grasp_posture);
+        pick(best_grasp);
+        // closedGripper(best_grasp.grasp_posture);
         break;
       }
       else{
