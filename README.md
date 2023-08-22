@@ -8,7 +8,3 @@ Currently, the grasp positions sent are randomly generated so that the basic pip
 This can be replaced in due course. 
 
 The executor node also implements IK checking - the highest quality grasp that passes the check is the one that gets executed.
-
-Changes to codebase for K1 arm are currently on the k1 branch only.
-
-Test test test
