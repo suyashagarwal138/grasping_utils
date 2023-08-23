@@ -146,7 +146,7 @@ namespace grasp_utils
       /* Direction is set as positive x axis */
       grasp_.pre_grasp_approach.direction.vector.x = 1.0;
       grasp_.pre_grasp_approach.min_distance = 0.005;           // was 0.095
-      grasp_.pre_grasp_approach.desired_distance = 0.115;
+      grasp_.pre_grasp_approach.desired_distance = 0.005;       // was 0.115
 
       // Setting post-grasp retreat
       // ++++++++++++++++++++++++++
@@ -155,7 +155,7 @@ namespace grasp_utils
       /* Direction is set as positive z axis */
       grasp_.post_grasp_retreat.direction.vector.z = 1.0;
       grasp_.post_grasp_retreat.min_distance = 0.01;            // was 0.1
-      grasp_.post_grasp_retreat.desired_distance = 0.25;
+      grasp_.post_grasp_retreat.desired_distance = 0.01;        // was 0.25
 
       // Setting posture of eef before grasp
       // +++++++++++++++++++++++++++++++++++
